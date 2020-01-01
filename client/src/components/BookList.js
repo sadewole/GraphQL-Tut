@@ -1,4 +1,8 @@
 import React from 'react';
+import { gql } from 'apollo-boost';
+import { graphql } from 'react-apollo';
+
+const getBookQuery = gql``;
 
 const BookList = () => {
   return (
@@ -10,4 +14,4 @@ const BookList = () => {
   );
 };
 
-export default BookList;
+export default getBookQuery(BookList);
