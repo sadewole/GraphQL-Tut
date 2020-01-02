@@ -4,11 +4,13 @@ const schema = require('./schema/schema')
 const cors = require('cors')
 const db = require('./db')
 
+
+// connect to db
+db()
+
 const app = express()
 // allow cross-origin requests
 app.use(cors())
-// connect to db
-db()
 // middlewares
 app.use('/graphql', graphqlHTTP({
     schema,

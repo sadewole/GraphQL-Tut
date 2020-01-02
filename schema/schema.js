@@ -118,7 +118,7 @@ const RootQuery = new GraphQLObjectType({
 
 
 const Mutation = new GraphQLObjectType({
-    type: 'Mutation',
+    name: 'Mutation',
     fields: {
         addAuthor: {
             type: AuthorType,
